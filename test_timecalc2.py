@@ -16,14 +16,5 @@ class TestTime(unittest.TestCase):
         self.assertEqual(expected, result)
         
 #logging test output to a file
-import sys 
-  
-def main(out = sys.stderr, verbosity = 2): 
-    loader = unittest.TestLoader() 
-  
-    suite = loader.loadTestsFromModule(sys.modules[__name__]) 
-    unittest.TextTestRunner(out, verbosity = verbosity).run(suite) 
-      
-if __name__ == '__main__': 
-    with open('unittestresult.txt', 'w') as f: 
-        main(f) 
+if __name__ == '__main__':
+    unittest.main()
