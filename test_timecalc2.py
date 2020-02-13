@@ -15,8 +15,7 @@ class TestTime(unittest.TestCase):
         expected = 12
         self.assertEqual(expected, result)
         
-   
-    import sys 
+import sys 
   
 def main(out = sys.stderr, verbosity = 2): 
     loader = unittest.TestLoader() 
